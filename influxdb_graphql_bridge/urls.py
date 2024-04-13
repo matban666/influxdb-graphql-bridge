@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+import service.views as service_views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('graphql/', service_views.graphql_view),
+    path('get-csrf-token/', service_views.get_csrf_token, name='get_csrf_token'),
 ]
