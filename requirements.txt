@@ -1,0 +1,7 @@
+asgiref
+Django~=5.0.4
+python-dotenv~=1.0.1
+sqlparse
+tzdata
+graphene~=3.3
+urllib3~=2.2.1
